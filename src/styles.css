@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --dv: calc(calc(1 / 1920) * 100vw);
+  --tv: calc(calc(1 / 1024) * 100vw);
+  --mv: calc(calc(1 / 768) * 100vw);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway, Inter, sans-serif;
+  font-feature-settings: "lnum";
+  /* outline: 1px solid red; */
+}
+p {
+  white-space: pre-line;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a:hover {
+  opacity: 0.5;
+}
+ul {
+  list-style: none;
+}
+html {
+  scrollbar-width: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background: lightgray;
+}
+input:focus {
+  outline: none;
+}
+input,
+button,
+fieldset {
+  border: none;
+  cursor: pointer;
+}
+/* button:hover {
+  opacity: 0.5;
+} */
+canvas {
+  cursor: grab;
+}
