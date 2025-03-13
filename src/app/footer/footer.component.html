@@ -1,1 +1,38 @@
-<footer>footer</footer>
+<footer class="footer">
+  <div class="footer__content">
+    <div class="footer__content-questions">
+      <strong class="footer__content-questions-title">Остались вопросы?</strong>
+      <p class="footer__content-questions-text">
+        Свяжитесь с нами любым удобным для вас способом
+      </p>
+    </div>
+    <div class="footer__content-contacts-box">
+      <div class="footer__content-contact">
+        <strong class="footer__content-contact-title">Телефон</strong>
+        <a class="footer__content-contact-link" href="tel:+79999999999"
+          >+7 (999) 999-99-99</a
+        >
+      </div>
+      <div class="footer__content-contact">
+        <strong class="footer__content-contact-title">Email</strong>
+        <a class="footer__content-contact-link" href="mailto:megadeal@ya.ru">
+          megadeal&#64;ya.ru
+        </a>
+      </div>
+      <ul class="footer__content-messengers-list">
+        <li *ngFor="let item of buttons">
+          <a
+            class="footer__content-messengers-item"
+            [href]="item.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              class="footer__content-messengers-item-img"
+              [src]="item.img"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

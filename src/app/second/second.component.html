@@ -1,57 +1,10 @@
-<section
-  style="width: 1440px; height: 980px; background: white; position: relative"
->
-  <div
-    style="
-      padding: 120px 60px;
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    "
-  >
-    <strong
-      style="
-        width: 447px;
-        height: 50px;
-        top: 870px;
-        left: 60px;
-        font-weight: 600;
-        font-size: 42px;
-        line-height: 120%;
-        letter-spacing: 0%;
-        vertical-align: bottom;
-      "
-      >Выберите категорию</strong
-    >
-    <ul style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px">
-      <li
-        *ngFor="let item of items"
-        style="
-          width: 315px;
-          height: 315px;
-          border-radius: 30px;
-          padding: 30px;
-          background: #f4f4f4;
-          position: relative;
-        "
-      >
-        <strong
-          style="
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 120%;
-            /* letter-spacing: 0%; */
-            vertical-align: bottom;
-            display: flex;
-            width: 135px;
-          "
-          >{{ item.text }}</strong
-        >
-        <img
-          [src]="item.img"
-          alt=""
-          style="position: absolute; bottom: 0px; right: 0px"
-        />
+<section class="second">
+  <div class="second__content">
+    <strong class="second__content-title">Выберите категорию</strong>
+    <ul class="second__content-list">
+      <li *ngFor="let item of items" class="second__content-item">
+        <strong class="second__content-item-title">{{ item.text }}</strong>
+        <img [src]="item.img" alt="" class="second__content-item-img" />
       </li>
     </ul>
   </div>

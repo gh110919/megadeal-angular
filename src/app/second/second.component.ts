@@ -1,11 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 
-interface Item {
-  text: string;
-  img: string;
-}
-
 @Component({
   selector: "app-second",
   imports: [CommonModule],
@@ -13,7 +8,7 @@ interface Item {
   styleUrl: "./second.component.css",
 })
 export class SecondComponent {
-  items: Item[] = [
+  items = [
     {
       text: "Компьютеры и ноутбуки",
       img: "/MacBook Pro 16-inch Space Black Portrait.png",

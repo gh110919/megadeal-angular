@@ -1,0 +1,13 @@
+<section class="fourth">
+  <strong class="fourth__title">Часто задаваемые вопросы</strong>
+  <ul class="fourth__questions-list">
+    <li *ngFor="let item of questions">
+      <div class="fourth__questions-item-box">
+        <p class="fourth__questions-item-title">
+          {{ item.question }}
+        </p>
+        <img class="fourth__questions-item-img" src="/Vector.svg" alt="" />
+      </div>
+    </li>
+  </ul>
+</section>

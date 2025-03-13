@@ -1,108 +1,23 @@
-<header
-  style="
-    width: 1440;
-    height: 80;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    padding-top: 15px;
-    padding-right: 60px;
-    padding-bottom: 15px;
-    padding-left: 60px;
-    gap: 30px;
-    display: flex;
-    background: #ffffff;
-    position: relative;
-    z-index: 3;
-  "
->
-  <img src="/Megadeal.svg" alt="" />
-  <div
-    style="
-      width: 845px;
-      height: 50px;
-      border-radius: 99px;
-      background: #f4f4f4;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 6px;
-    "
-  >
-    <button
-      style="
-        width: 147px;
-        height: 40px;
-        border-radius: 99px;
-        background: #242424;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-      "
-    >
-      <img src="/menu_open.svg" alt="" />
-      <p
-        style="
-          font-family: Inter;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 140%;
-          letter-spacing: 0%;
-          vertical-align: bottom;
-          color: #ffffff;
-        "
-      >
-        Категории
-      </p>
+<header class="header">
+  <img class="header__logo" src="/Megadeal.svg" alt="" />
+  <div class="header__content">
+    <button class="header__content-categories-button">
+      <img class="header__content-categories-img" src="/menu_open.svg" alt="" />
+      <p class="header__content-button-text">Категории</p>
     </button>
     <input
-      type="text"
-      style="
-        width: 606px;
-        height: 40px;
-        gap: 10px;
-        background: transparent;
-        /* border-radius: 99px; */
-      "
+      type="search"
+      class="header__content-search-input"
       placeholder="Поиск по объявлениям"
     />
-    <button
-      style="
-        width: 40px;
-        height: 40px;
-        border-radius: 99px;
-        background: #242424;
-      "
-    >
-      <img src="/search.svg" alt="" />
+    <button class="header__content-search-button">
+      <img class="header__content-search-button-img" src="/search.svg" alt="" />
     </button>
   </div>
-  <div style="display: flex; gap: 10px">
-    <button
-      style="
-        width: 232px;
-        height: 50px;
-        border-radius: 99px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 140%;
-        letter-spacing: 0%;
-        vertical-align: bottom;
-        background: #aee319;
-      "
-    >
+  <div class="header__content-announcement-profile-buttons-box">
+    <button class="header__content-announcement-button">
       Разместить объявление
     </button>
-    <button
-      style="
-        width: 50px;
-        height: 50px;
-        border-radius: 99px;
-        background: #242424;
-        color: #ffffff;
-      "
-    >
-      VL
-    </button>
+    <button class="header__content-profile-button">VL</button>
   </div>
 </header>

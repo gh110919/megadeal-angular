@@ -1,0 +1,95 @@
+:host {
+  --lg-right: linear-gradient(
+    to right,
+    rgba(223, 223, 223),
+    rgba(241, 241, 241, 255)
+  );
+  --lg-top: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+.first {
+  margin-top: calc(-80 * var(--dv));
+  position: relative;
+  width: calc(1440 * var(--dv));
+  height: calc(750 * var(--dv));
+  background: var(--lg-right), var(--lg-top);
+  background-blend-mode: screen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first__bg {
+  position: absolute;
+  width: calc(1440 * var(--dv));
+  height: calc(675 * var(--dv));
+  bottom: calc(0 * var(--dv));
+  border-bottom-right-radius: calc(30 * var(--dv));
+  border-bottom-left-radius: calc(30 * var(--dv));
+}
+.first__content {
+  width: calc(650 * var(--dv));
+  height: calc(235 * var(--dv));
+  gap: calc(40 * var(--dv));
+  position: static;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first__content-title-subtitle-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: calc(20 * var(--dv));
+}
+.first__content-title {
+  width: calc(650 * var(--dv));
+  height: calc(57 * var(--dv));
+  font-weight: 600;
+  font-size: calc(52 * var(--dv));
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: bottom;
+  text-transform: uppercase;
+}
+.first__content-subtitle {
+  width: calc(464 * var(--dv));
+  height: calc(68 * var(--dv));
+  font-weight: 400;
+  font-size: calc(28 * var(--dv));
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: bottom;
+}
+.first__content-buttons-box {
+  display: flex;
+  gap: calc(10 * var(--dv));
+  position: static;
+  z-index: 20;
+}
+.first__content-button--black,
+.first__content-button--green {
+  width: calc(150 * var(--dv));
+  height: calc(50 * var(--dv));
+  border-radius: calc(99 * var(--dv));
+  font-weight: 400;
+  font-size: calc(16 * var(--dv));
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: bottom;
+}
+.first__content-button--black {
+  background: #242424;
+  color: white;
+}
+.first__content-button--green {
+  background: #aee319;
+  color: black;
+}
