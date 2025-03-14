@@ -10,19 +10,19 @@ import { Component } from "@angular/core";
 export class FooterComponent {
   buttons = [
     {
-      img: "/Vector (1).svg",
+      img: "https://gh110919.github.io/megadeal-angular/Vector (1).svg",
       link: "https://wa.me",
     },
     {
-      img: "/Path-3.svg",
+      img: "https://gh110919.github.io/megadeal-angular/Path-3.svg",
       link: "https://t.me",
     },
     {
-      img: "/Vector (2).svg",
+      img: "https://gh110919.github.io/megadeal-angular/Vector (2).svg",
       link: "https://vk.com",
     },
     {
-      img: "/Guides.svg",
+      img: "https://gh110919.github.io/megadeal-angular/Guides.svg",
       link: "https://viber.com",
     },
   ];
